@@ -1,6 +1,5 @@
 # Toxic-comment-classifier
 
-# Toxic Comment Classifier
 
 This Python code builds a binary classification model to predict the toxicity of text comments. It uses NLP techniques to preprocess the data and a Multinomial Naive Bayes classifier for classification.
 
