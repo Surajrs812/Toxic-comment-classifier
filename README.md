@@ -24,3 +24,6 @@ This Python code builds a binary classification model to predict the toxicity of
 
 6. **Model Saving:**
    - The trained model and TF-IDF vectorizer are saved.
+
+7. **Flask Web App"**
+   - The Flask web app helps to merge the fromt end with back end
