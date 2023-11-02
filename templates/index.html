@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Toxicity Detector</title>
+</head>
+<body class="dark-mode">
+    <div class="container">
+        <header>
+            <h1>Toxicity Detector</h1>
+        </header>
+        <main>
+            <form action="{{ url_for('predict') }}" method="post">
+                <label for="text">Enter a sentence:</label>
+                <input type="text" id="text" name="text" required>
+                <button type="submit">Detect Toxicity</button>
+            </form>
+
+            <div id="result" class="output-section">
+                <h2>Text Toxicity:</h2>
+                <p id="toxicity_result">{{ toxicity_result }}</p>
+            </div>
+        </main>
+        <footer>
+            <p>Project by Suraj R S, Dept. of ISE, RNSIT</p>
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
