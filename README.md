@@ -1,29 +1,78 @@
-# Toxic-comment-classifier
+# Toxic Comment Classifier
 
+## Project Overview
 
-This Python code builds a binary classification model to predict the toxicity of text comments. It uses NLP techniques to preprocess the data and a Multinomial Naive Bayes classifier for classification.
+This project focuses on building a machine learning model to identify toxic comments in text. It provides a user-friendly web-based interface that allows users to input text comments, and the model will classify them as either toxic or non-toxic.
 
-## Methods Used
+## Project Components
 
-1. **Data Handling:**
-   - Data is loaded from a CSV file into a Pandas DataFrame.
-   - Unnecessary columns are removed.
+This project comprises the following components:
 
-2. **Text Pre-processing:**
-   - Text data is cleaned, tokenized, and lemmatized.
-   - TF-IDF vectors are created.
+1. **Model Training:** The machine learning model for comment toxicity detection is trained using labeled data containing both toxic and non-toxic comments.
 
-3. **Model Creation:**
-   - A Multinomial Naive Bayes classifier is trained on the TF-IDF vectors.
-   
-4. **Model Evaluation:**
-   - ROC curve and AUC score are used for model evaluation.
-   
-5. **Prediction:**
-   - The model predicts toxicity of text.
+2. **Web Application:** A Flask-based web application (found in `app.py`) serves as the user interface for entering comments and obtaining real-time predictions from the trained model.
 
-6. **Model Saving:**
-   - The trained model and TF-IDF vectorizer are saved.
+## Prerequisites
 
-7. **Flask Web App"**
-   - The Flask web app helps to merge the fromt end with back end
+Before running the application, make sure you have the following prerequisites installed:
+
+- Python 3.7 or higher
+- Flask (Python web framework)
+- Scikit-learn (machine learning library)
+- NLTK (Natural Language Toolkit)
+- NumPy (numerical computing library)
+
+You can install the required Python packages using pip:
+
+```bash
+pip install Flask scikit-learn nltk numpy
+```
+
+## Installation and Usage
+
+Follow these steps to install and use the web application:
+
+1. Clone this repository to your local machine:
+
+   ```bash
+   git clone https://github.com/Surajrs812/Toxic-comment-classifier.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd Toxic-comment-classifier
+   ```
+
+3. Run the Flask application:
+
+   ```bash
+   python app.py
+   ```
+
+4. Open a web browser and go to [http://127.0.0.1:5000](http://127.0.0.1:5000) to access the web application.
+
+## How to Use
+
+1. Visit the application URL ([http://127.0.0.1:5000](http://127.0.0.1:5000)).
+
+2. You'll see a simple web page with an input field for comments.
+
+3. Enter a text comment and click the "Check Toxicity" button.
+
+4. The web application will display the classification result as either toxic or non-toxic.
+
+## Directory Structure
+
+The project directory is organized as follows:
+
+- `app.py`: The Flask web application.
+- `templates`: HTML templates for the web application.
+- `Model Training`: Directory to store the trained comment toxicity model.
+
+## Credits
+
+This project was created by Suraj R S.
+
+---
+
